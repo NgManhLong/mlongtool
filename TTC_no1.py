@@ -51,7 +51,7 @@ from bs4 import BeautifulSoup
 # màu 
 d = "\033[1;31m"
 l = "\033[1;32m"
-v = "\033[1;33m"
+vang = "\033[1;33m"
 t = "\033[1;37m"
 tim = "\033[1;35m"
 x = "\033[1;36m"
@@ -454,13 +454,13 @@ for x in nhiemvu:
 list_nv = [x for x in list_nv if x in ['1','2','3','4','5','6','7','8','9','0', 'q', 's']]
 while(True):
     try:
-        delay = int(input(f'{thanh}{v}Nhập Delay Job{trang}: {vang}'))
+        delay = int(input(f'{thanh}{v}{luc}Nhập Delay Job{trang}: {vang}'))
         break
     except:
         print(f'{do}nhập số mà thằng ngáo bị tật à')
 while(True):
     try:
-        JobbBlock = int(input(f'{thanh}{v}Sau Bao Nhiêu Nhiệm Vụ Chống Block{trang}: {vang}'))
+        JobbBlock = int(input(f'{thanh}{v}{luc}Sau Bao Nhiêu Nhiệm Vụ Chống Block{trang}: {vang}'))
         if JobbBlock <= 1:
             print(f'{do}Vui Lòng Nhập Lớn Hơn 1')
         break
@@ -468,19 +468,19 @@ while(True):
         print(f'{do}nhập số mà có bị tật ko')
 while(True):
     try:
-        DelayBlock = int(input(f'{thanh}{v}Sau {vang}{JobbBlock} {v}Nhiệm Vụ Nghỉ Bao Nhiêu Giây{trang}: {vang}'))
+        DelayBlock = int(input(f'{thanh}{v}{luc}Sau {vang}{JobbBlock} {v}{luc}Nhiệm Vụ Nghỉ Bao Nhiêu Giây{trang}: {vang}'))
         break
     except:
         print(f'{do}nhập số mà có bị tật ko')
 while(True):
     try:
-        JobBreak = int(input(f'{thanh}{v}Sau Bao Nhiêu Nhiệm Vụ Chuyển Acc{trang}: {vang}'))
+        JobBreak = int(input(f'{thanh}{v}{luc}Sau Bao Nhiêu Nhiệm Vụ Chuyển Acc{trang}: {vang}'))
         if JobBreak <= 1:
             print(f'{do}Vui Lòng Nhập Lớn Hơn 1')
         break
     except:
         print(f'{do}Vui Lòng Nhập Số')
-runidfb = input(f'{thanh}{v}Bạn Có Muốn Ẩn Id Facebook Không? {do}({vang}y/n{do}){v}: {vang}')
+runidfb = input(f'{thanh}{v}{luc}Bạn Có Muốn Ẩn Id Facebook Không? {do}({vang}y/n{do}){v}: {vang}')
 print(f'{do}══════════════════════════════════════════════════════  ')
 stt = 0
 totalxu = 0
